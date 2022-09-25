@@ -8,5 +8,6 @@ Console.WriteLine(Data.CurrentRace.Track.Name);
 
 for (; ; )
 {
+    //loop
     Thread.Sleep(100);
 }
