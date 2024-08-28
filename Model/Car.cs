@@ -21,5 +21,12 @@ namespace Model
             Speed = 0;
             IsBroken = false;
         }
+        public Car(int quality, int performance, int speed)
+        {
+            Quality = quality;
+            Performance = performance;
+            Speed = speed;
+            IsBroken = false;
+        }
     }
 }

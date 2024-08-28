@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Cars\Aston-transparent.png" />
+    <None Remove="Images\Cars\Aston.png" />
+    <None Remove="Images\Cars\Broken\Aston-broken.png" />
+    <None Remove="Images\Cars\Broken\Ferrari-broken.png" />
+    <None Remove="Images\Cars\Broken\Mclaren-broken.png" />
+    <None Remove="Images\Cars\Broken\Redbull-broken.png" />
+    <None Remove="Images\Cars\Ferrari-transparent.png" />
+    <None Remove="Images\Cars\Ferrari.png" />
+    <None Remove="Images\Cars\Mclaren-transparent.png" />
+    <None Remove="Images\Cars\Mclaren.png" />
+    <None Remove="Images\Cars\Redbull-transparent.png" />
+    <None Remove="Images\Cars\Redbull.png" />
+    <None Remove="Images\Track\Corner.png" />
+    <None Remove="Images\Track\Finish.png" />
+    <None Remove="Images\Track\Start.png" />
+    <None Remove="Images\Track\Straight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\Cars\Aston-transparent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Cars\Aston.png" />
+    <Content Include="Images\Cars\Broken\Aston-broken.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Cars\Broken\Ferrari-broken.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Cars\Broken\Mclaren-broken.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Cars\Broken\Redbull-broken.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Cars\Ferrari-transparent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Cars\Ferrari.png" />
+    <Content Include="Images\Cars\Mclaren-transparent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Cars\Mclaren.png" />
+    <Content Include="Images\Cars\Redbull-transparent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Cars\Redbull.png" />
+    <Content Include="Images\Track\Corner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Track\Finish.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Track\Start.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Track\Straight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="8.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+  </ItemGroup>
+
+</Project>

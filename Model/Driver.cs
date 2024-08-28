@@ -9,12 +9,12 @@ namespace Model
     public class Driver : IParticipant
     {
 
-        public Driver(string name, TeamColors teamColor)
+        public Driver(string name, int points, TeamColors teamColor, IEquipment equipment)
         {
             Name = name;
             TeamColor = teamColor;
-            Points = 0;
-            Equipment = new Car();
+            Points = points;
+            Equipment = equipment;
         }
     }
 }

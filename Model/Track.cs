@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Model
 {
@@ -14,12 +15,18 @@ namespace Model
         public Track(string name, SectionTypes[] sections)
         {
             Name = name;
-            Sections = new LinkedList<Section>();
-            foreach(SectionTypes section in sections)
-            {
-                Sections.AddLast(new Section(section));
-            }
+            Sections = ConvertSectionTypesToLinkedList(sections);
 
+        }
+
+        private LinkedList<Section> ConvertSectionTypesToLinkedList(SectionTypes[] sections)
+        {
+            LinkedList<Section> list = new LinkedList<Section>();
+            foreach (SectionTypes section in sections)
+            {
+                list.AddLast(new Section(section));
+            }
+            return list;
         }
     }
 }
